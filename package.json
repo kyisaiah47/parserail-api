@@ -1,0 +1,56 @@
+{
+  "name": "parserail-api",
+  "version": "0.5.3",
+  "description": "Official TypeScript SDK for ParseRail, the AI back-end for your product. Parse documents, extract fields, redact PII, analyze contracts, fight chargebacks, enrich companies.",
+  "keywords": [
+    "kynth",
+    "ai",
+    "api",
+    "document-parsing",
+    "ocr",
+    "invoice-ocr",
+    "receipt-ocr",
+    "bank-statement",
+    "pdf-extraction",
+    "data-extraction",
+    "document-ai",
+    "quickbooks",
+    "pii-redaction",
+    "contract-analysis",
+    "chargeback",
+    "llm"
+  ],
+  "homepage": "https://parserail.thecompound.tech",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyisaiah47/compound-core-mcp"
+  },
+  "license": "MIT",
+  "author": "Compound Labs <hello@thecompound.tech>",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit"
+  }
+}
