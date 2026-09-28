@@ -1,0 +1,7 @@
+{
+ "product": "ParseRail SDK",
+ "parent": "ParseRail",
+ "domain": "https://parserail.thecompound.tech",
+ "tagline": "Official TypeScript SDK for ParseRail.",
+ "description": "Parse documents, extract fields, redact PII, analyze contracts, fight chargebacks, enrich companies — the AI back-end for your product."
+}
