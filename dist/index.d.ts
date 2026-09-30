@@ -184,4 +184,3 @@ export declare class ParseRailCore {
 }
 export default ParseRailCore;
 //# sourceMappingURL=index.d.ts.map
-export { ParseRailCore as KynthCore, ParseRailError as KynthError };

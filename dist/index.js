@@ -257,6 +257,3 @@ export class ParseRailCore {
 }
 export default ParseRailCore;
 //# sourceMappingURL=index.js.map
-// Back-compat aliases. These classes were exported as KynthCore and KynthError before the
-// studio was renamed to Compound Labs. Anything still importing the old names keeps working.
-export { ParseRailCore as KynthCore, ParseRailError as KynthError };
