@@ -1,0 +1,54 @@
+{
+  "claims": [
+    {
+      "id": "new-key-free-credits",
+      "claim": "Free credits included with a new ParseRail key",
+      "value": "500 free credits",
+      "kind": "offer",
+      "sourceUrl": "https://parserail.thecompound.tech",
+      "sourceTitle": "ParseRail — product homepage",
+      "asOf": "2026-09-30",
+      "appearsOn": ["README.md"],
+      "lastVerified": "2026-09-30",
+      "lastCheckedNote": "The fetched homepage did not state the 500-credit offer; retained as unverifiable rather than guessing.",
+      "status": "unverifiable"
+    },
+    {
+      "id": "node-runtime-support",
+      "claim": "Supported Node.js runtime",
+      "value": "Node 18+",
+      "kind": "compatibility",
+      "sourceUrl": "https://parserail.thecompound.tech/docs/quickstart",
+      "sourceTitle": "ParseRail — Quickstart",
+      "asOf": "2026-09-30",
+      "appearsOn": ["README.md"],
+      "lastVerified": "2026-09-30",
+      "lastCheckedNote": "The fetched quickstart did not expose the README runtime claim in rendered content; retained as unverifiable.",
+      "status": "unverifiable"
+    },
+    {
+      "id": "credit-unit-price",
+      "claim": "ParseRail credit unit price",
+      "value": "$0.01 per credit",
+      "kind": "price",
+      "sourceUrl": "https://parserail.thecompound.tech/docs/credits",
+      "sourceTitle": "ParseRail — Credits & pricing",
+      "asOf": "2026-09-30",
+      "appearsOn": ["README.md"],
+      "lastVerified": "2026-09-30",
+      "status": "verified"
+    },
+    {
+      "id": "successful-call-billing",
+      "claim": "ParseRail charges credits only for successful calls",
+      "value": "A failed call costs nothing; billing occurs only on success",
+      "kind": "billing-policy",
+      "sourceUrl": "https://parserail.thecompound.tech/docs/credits",
+      "sourceTitle": "ParseRail — Credits & pricing",
+      "asOf": "2026-09-30",
+      "appearsOn": ["README.md"],
+      "lastVerified": "2026-09-30",
+      "status": "verified"
+    }
+  ]
+}
