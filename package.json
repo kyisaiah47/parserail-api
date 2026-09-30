@@ -3,7 +3,6 @@
   "version": "0.5.3",
   "description": "Official TypeScript SDK for ParseRail, the AI back-end for your product. Parse documents, extract fields, redact PII, analyze contracts, fight chargebacks, enrich companies.",
   "keywords": [
-    "kynth",
     "ai",
     "api",
     "document-parsing",
