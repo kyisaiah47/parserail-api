@@ -22,7 +22,7 @@ Get a key at **[parserail.thecompound.tech](https://parserail.thecompound.tech)*
 
 ## Methods
 
-Every method returns the endpoint result plus a `usage: { credits, balanceRemaining }` envelope. A non-2xx response throws a typed `ParseRailError` (and never burns credits).
+Every method returns the endpoint result and a `usage: { credits, balanceRemaining }` envelope. A non-2xx response throws a typed `ParseRailError` and never burns credits.
 
 ```ts
 await parserail.parse({ fileUrl });                              // documents → JSON
@@ -37,9 +37,9 @@ await parserail.enrich({ email: "sam@stripe.com" });             // company prof
 await parserail.account();                                       // balance
 ```
 
-## Async & webhooks
+## Async and webhooks
 
-A hundred-page contract doesn't fit in a request/response cycle. The document endpoints, `parse`, `invoice`, `receipt`, `statement`, `resume`, `tables`, `split`, `compare`, `contract`, take `async: true` and hand you a job instead of a result.
+A hundred-page contract does not fit in one request/response cycle. The document endpoints `parse`, `invoice`, `receipt`, `statement`, `resume`, `tables`, `split`, `compare`, and `contract` accept `async: true` and return a job instead of a result.
 
 ```ts
 const job = await parserail.parse({ fileUrl, async: true });   // → { jobId, status: "queued" }
@@ -49,9 +49,9 @@ if (done.status === "succeeded") console.log(done.result!.totalAmount);
 else console.error(done.error);                            // failed jobs are never charged
 ```
 
-`async: true` narrows the return type to a `JobHandle`, so the compiler tells you which one you got. Poll a single time with `getJob(jobId)` if you'd rather drive the loop yourself.
+Setting `async: true` narrows the return type to a `JobHandle`, so the compiler identifies the returned type. You can poll once with `getJob(jobId)` to drive the loop yourself.
 
-Every job reaches a terminal state. If the instance running yours dies mid-flight, it is marked `failed` with an explanation rather than left `running` forever, and you aren't billed for it. Nothing is silently retried; resubmit and you stay in control of the spend.
+Every job reaches a terminal state. If the instance running your job dies mid-flight, the job is marked `failed` with an explanation instead of remaining `running` forever, and you are not billed for it. The system never retries jobs silently, so you must resubmit them and control the spend.
 
 ### Webhooks
 
@@ -73,7 +73,7 @@ function verify(rawBody: string, header: string, secret: string) {
 }
 ```
 
-Delivery is best-effort and never retried, **polling is the source of truth**.
+Delivery is best-effort and never retried. **Polling is the source of truth**.
 
 ## Error handling
 

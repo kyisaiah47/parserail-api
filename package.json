@@ -1,7 +1,7 @@
 {
   "name": "parserail-api",
   "version": "0.5.4",
-  "description": "Official TypeScript SDK for ParseRail, the AI back-end for your product. Parse documents, extract fields, redact PII, analyze contracts, fight chargebacks, enrich companies.",
+  "description": "The official TypeScript SDK for ParseRail provides an AI back-end for your product. It parses documents, extracts fields, redacts PII, analyzes contracts, fights chargebacks, and enriches companies.",
   "keywords": [
     "ai",
     "api",
