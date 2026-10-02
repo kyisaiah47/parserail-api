@@ -1,6 +1,6 @@
 {
   "name": "parserail-api",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "Official TypeScript SDK for ParseRail, the AI back-end for your product. Parse documents, extract fields, redact PII, analyze contracts, fight chargebacks, enrich companies.",
   "keywords": [
     "ai",
@@ -22,7 +22,7 @@
   "homepage": "https://parserail.thecompound.tech",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kyisaiah47/compound-core-mcp"
+    "url": "git+https://github.com/kyisaiah47/parserail-api.git"
   },
   "license": "MIT",
   "author": "Compound Labs <hello@thecompound.tech>",

@@ -18,7 +18,7 @@ console.log(doc.totalAmount);              // 4820.5
 console.log(doc.usage.balanceRemaining);   // 490
 ```
 
-Get a key (and 500 free credits) at **[parserail.thecompound.tech](https://parserail.thecompound.tech)**. Zero runtime dependencies, works on Node 18+, browsers, and edge/worker runtimes with a global `fetch`.
+Get a key at **[parserail.thecompound.tech](https://parserail.thecompound.tech)**. There is no free tier. Credits are bought up front, a $20 pack or a plan from $19/mo. Zero runtime dependencies, works on Node 18+, browsers, and edge/worker runtimes with a global `fetch`.
 
 ## Methods
 
@@ -104,6 +104,6 @@ new ParseRailCore({
 
 ## Pricing
 
-Pay-per-call credits, no subscription. Each endpoint burns at its own rate (1 credit = $0.01), and you're only charged on a successful call. See [parserail.thecompound.tech/docs](https://parserail.thecompound.tech/docs).
+Pay-per-call credits, no subscription required. Each endpoint burns at its own rate (1 credit = $0.01), and you're only charged on a successful call. See [parserail.thecompound.tech/docs](https://parserail.thecompound.tech/docs).
 
 MIT © Compound Labs
